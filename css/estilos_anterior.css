@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300,400,500,600,700,900&family=Ubuntu:wght@300;400&display=swap');
+
+/*reset de valores*/
+*{
+    margin:0;
+    padding:0;
+   
+}
+body{
+    color:black;
+    font-family: "Roboto", sans-serif;
+    line-height: initial;
+    background-color: #c7c7c7;
+}
+
+
+/*header*/
+.header{
+    background-color: rgba(186, 186, 186, 0.562);
+    color:rgb(16, 16, 16);
+    .logo{
+        width: 100px;
+
+    }
+}
+.main{
+    .imagenFondoMainIndex{
+        height: 40vh;
+        text-align: center;
+        background-image:url("../assets/img/imagen_main_index.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        .tituloPrincipal{
+            font-size: 2.5rem;
+            font-weight: 300;
+            background-color: rgba(127, 255, 212, 0.358);
+        }
+    }
+    .contenedorTextoMainIndex{
+        margin-top:50px;
+        text-align: center;
+       
+        .subtituloPrincipal{
+            width:50%;
+            margin:0 auto;
+            margin-top:20px;
+            font-weight: 300;
+        }
+        .enlacePropiedades{
+            margin-top:20px;
+            display: inline-block;/*para poder a los elementos en linea ponerle ancho y alto, y padding y margin en todos los laterales, pero se siga comportando como un elemento en linea y no en bloque*/
+            text-decoration: none;/*le saco el subrayado*/
+            color:white;
+            background-color:black;
+            width: 100px;
+            padding-top:10px;
+            padding-bottom: 10px;
+            text-align: center;
+            border-radius:5px;
+        }
+    }
+  
+    .tarjeta{
+        width:500px;
+    }
+}
+
+
+
+
+.colorGris{
+    color:gray;
+}
+.iconoWsp{
+    position:fixed;
+    right: 10px;
+    bottom:10px;
+    .fa-whatsapp{
+        color:rgb(37, 211, 102);/*verde claro*/
+        font-size: 5rem;
+    }
+}
